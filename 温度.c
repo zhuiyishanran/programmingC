@@ -11,10 +11,11 @@ main()
 	upper = 300; /* 温度表上限 */
 	step = 20; /* 步长 */
 	
-	fahr = lower;
-	while (fahr <= upper) {
+	printf("温度对照表\n");
+	fahr = upper; 
+	while (fahr >= lower) {
 		celsius = (5.0 / 9.0) * (fahr-32.0);
 		printf("%3.0f\t%6.1f\n", fahr, celsius);
-		fahr = fahr + step;
+		fahr = fahr - step;
 	}
  } 
